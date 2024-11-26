@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="@drawable/over"
+    tools:context=".LoginActivity">
+
+    <!-- Username Input -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFFFF">
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#777777"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+            android:drawablePadding="8dp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Password Input -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FFFFFF">
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#777777"
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/baseline_password_24"
+            android:drawablePadding="8dp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Login Button -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FF6F61">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:drawableRight="@drawable/baseline_login_24" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Register Text -->
+    <TextView
+        android:id="@+id/txt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belum punya akun?"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp" />
+
+    <!-- Clickable Register Text -->
+    <TextView
+        android:id="@+id/txt_register_clickable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar di sini"
+        android:textSize="14sp"
+        android:textColor="#00FFFF"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true" />
+</LinearLayout>
